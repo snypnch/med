@@ -1,0 +1,253 @@
+/* Ice Theme for Mandaue MedCompare User Interface */
+
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+    color: #2c3e50;
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Ice Effects and Frost Glass */
+.card, .btn, .form-control, .dropdown-menu, .alert {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(148, 176, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* Header Styles */
+.navbar {
+    background: linear-gradient(90deg, #1a75ff 0%, #00ccff 100%) !important;
+    box-shadow: 0 4px 20px rgba(0, 174, 255, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Search Box */
+.search-form .form-control {
+    border-radius: 50px 0 0 50px;
+    height: 3.2rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #2c3e50; /* Changed from white to dark color */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(0, 195, 255, 0.4);
+}
+
+.search-form .form-control::placeholder {
+    color: rgba(44, 62, 80, 0.6); /* Changed from white to a more visible placeholder color */
+}
+
+.search-form .btn {
+    border-radius: 0 50px 50px 0;
+    height: 3.2rem;
+    background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+    border: none;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(0, 102, 255, 0.5);
+    background: linear-gradient(135deg, #00a6ff 0%, #0073ff 100%);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 192, 255, 0.1) 100%);
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 140, 255, 0.2);
+    padding: 1rem 1.5rem;
+}
+
+.card-body {
+    padding: 1.8rem;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 98, 255, 0.15), 0 5px 15px rgba(0, 98, 255, 0.07) !important;
+}
+
+/* Card variants for ice theme */
+.card.ice-soft {
+    background: linear-gradient(135deg, rgba(232, 246, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.card.ice-medium {
+    background: linear-gradient(135deg, rgba(220, 241, 255, 0.8) 0%, rgba(243, 250, 255, 0.8) 100%);
+}
+
+.card.ice-strong {
+    background: linear-gradient(135deg, rgba(191, 228, 255, 0.9) 0%, rgba(232, 246, 255, 0.9) 100%);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #00a6ff 0%, #0073ff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(0, 102, 255, 0.5);
+}
+
+.btn-outline-primary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #0066ff !important; /* Force text color */
+    border: 2px solid rgba(0, 102, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.1);
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, rgba(0, 153, 255, 0.1) 0%, rgba(0, 102, 255, 0.1) 100%);
+    color: #0066ff !important;
+    border-color: #0066ff;
+    box-shadow: 0 7px 15px rgba(0, 102, 255, 0.2);
+}
+
+.btn-outline-light {
+    color: #fff !important;
+}
+
+.btn-outline-light:hover {
+    color: #0066ff !important;
+}
+
+/* Specific fix for register button on login page */
+#registerForm .btn {
+    color: #fff !important;
+}
+
+/* How It Works Section */
+.rounded-circle {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+    box-shadow: 0 10px 25px rgba(0, 102, 255, 0.3), inset 0 -5px 10px rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Results Page */
+.form-range::-webkit-slider-thumb {
+    background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+}
+
+.form-range::-moz-range-thumb {
+    background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+}
+
+.form-range::-ms-thumb {
+    background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
+}
+
+/* Pricing Tables */
+.table {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: rgba(0, 102, 255, 0.1);
+    border-color: rgba(0, 102, 255, 0.2);
+    color: #0066ff;
+    font-weight: 600;
+}
+
+.table tbody td {
+    border-color: rgba(0, 102, 255, 0.1);
+}
+
+.table-success {
+    background-color: rgba(227, 246, 255, 0.5) !important;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(241, 247, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.1);
+    border-top: 1px solid rgba(148, 176, 255, 0.2);
+}
+
+footer a {
+    color: #0066ff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+/* Pharmacy Map */
+#map {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);
+    border: 4px solid white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
